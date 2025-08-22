@@ -6,6 +6,14 @@ This project is a Java-based migration of a COBOL program that generates a JSON 
 
 The purpose of this project is to demonstrate how a simple COBOL program can be migrated to a modern Java application. The Java code uses the Jackson library to generate a JSON object from a simple `Record` object.
 
+## Code Description
+
+The project consists of two main Java classes:
+
+*   `Record.java`: This class is a simple POJO (Plain Old Java Object) that defines the data structure for the JSON output. It contains three fields: `name` (String), `value` (String), and `enabled` (boolean). The `@JsonProperty` annotations are used by the Jackson library to map the Java fields to the JSON keys.
+
+*   `JsonGenerateExample.java`: This is the main class of the application. It creates an instance of the `Record` class, populates it with sample data, and then uses the Jackson `ObjectMapper` to serialize the `Record` object into a pretty-printed JSON string. The resulting JSON is then printed to the console.
+
 ## Requirements
 
 *   Java 11 or higher
