@@ -41,4 +41,13 @@ public class Record {
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
     }
+
+    @Override
+    public String toString() {
+        return "Record{" +
+                "name='" + name + '\'' +
+                ", value='" + value + '\'' +
+                ", enabled=" + enabled +
+                '}';
+    }
 }
