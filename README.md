@@ -27,7 +27,7 @@ The purpose of this project is to demonstrate how a simple COBOL program can be 
     ```
 4.  **Run the application:**
     ```bash
-    java -cp target/my-first-migration-1.0-SNAPSHOT.jar com.migration.JsonGenerateExample
+    java -cp target/my-first-migration-1.0-SNAPSHOT.jar com.migration.JsonGenerateApplication
     ```
 
 ## Example Output

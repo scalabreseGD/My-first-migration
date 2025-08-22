@@ -1,0 +1,5 @@
+com\migration\entity\Record.class
+com\migration\service\JsonService.class
+com\migration\exception\JsonGenerationException.class
+com\migration\ApplicationRunner.class
+com\migration\JsonGenerateApplication.class

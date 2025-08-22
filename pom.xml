@@ -24,6 +24,23 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.13.3</version>
         </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>2.0.13</version>
+        </dependency>
+
+        <!-- Logback (implementation for SLF4J) -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.5.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.9.1</version> <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -41,7 +58,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.migration.JsonGenerateExample</mainClass>
+                                    <mainClass>com.migration.JsonGenerateApplication</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
