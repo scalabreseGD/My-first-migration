@@ -35,7 +35,7 @@ The project consists of two main Java classes:
     ```
 4.  **Run the application:**
     ```bash
-    java -cp target/my-first-migration-1.0-SNAPSHOT.jar com.migration.JsonGenerateExample
+    java -cp target/my-first-migration-1.0-SNAPSHOT.jar com.migration.JsonGenerateApplication
     ```
 
 ## Example Output

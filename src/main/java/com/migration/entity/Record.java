@@ -1,4 +1,4 @@
-package com.migration;
+package com.migration.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
