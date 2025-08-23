@@ -1,5 +1,6 @@
 package com.migration;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 
@@ -8,8 +9,8 @@ public class JsonGenerateExample {
     public static void main(String[] args) {
         // Create a new Record object
         Record record = new Record();
-        record.setName("Test Name");
-        record.setValue("Test Value");
+        record.setName(args[0]);
+        record.setValue(args[1]);
         record.setEnabled(true);
 
         // Use Jackson to generate JSON
@@ -28,8 +29,10 @@ public class JsonGenerateExample {
             System.out.println("JSON output character count: " + jsonCharCount);
             System.out.println("Done.");
 
-        } catch (Exception e) {
-            System.err.println("Error generating JSON: " + e.getMessage());
+        } catch (JsonProcessingException e) {
+            System.err.println("JSON processing error: " + e.getMessage());
+        } catch (NullPointerException e) {
+            System.err.println("Null pointer error: " + e.getMessage());
         }
     }
 }
