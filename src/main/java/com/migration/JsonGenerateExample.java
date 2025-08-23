@@ -8,8 +8,8 @@ public class JsonGenerateExample {
     public static void main(String[] args) {
         // Create a new Record object
         Record record = new Record();
-        record.setName("Test Name");
-        record.setValue("Test Value");
+        record.setName(args[0]);
+        record.setValue(args[1]);
         record.setEnabled(true);
 
         // Use Jackson to generate JSON
